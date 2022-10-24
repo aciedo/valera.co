@@ -1,20 +1,38 @@
 <main>
 	<div id="hi">
 		<h1>Hi. We’re <green>Valera</green></h1>
-		<svg width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="wmpt-desktop">
+		<svg
+			width="44"
+			height="42"
+			viewBox="0 0 44 42"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			class="wmpt-desktop"
+		>
 			<path
 				d="M14.9116 28.5733L15.0518 28.5269L15.1727 28.4421L17.2982 26.9496L16.4187 29.5679L16.3672 29.7212L16.3667 29.8829L16.3355 39.1287L16.3321 40.1309L17.3343 40.1321L26.4529 40.1431L27.445 40.1443L27.4541 39.1524L27.5388 29.9802L27.5403 29.8132L27.4875 29.6548L26.6662 27.1898L28.9274 28.84L29.0567 28.9344L29.209 28.9837L37.8848 31.791L38.8362 32.0989L39.1441 31.1474L41.9514 22.4716L42.26 21.5181L41.3058 21.2117L32.5029 18.3842L32.3517 18.3356L32.1928 18.3363L29.6867 18.3471L31.89 16.7463L32.02 16.6518L32.1139 16.5214L37.5432 8.9775L38.1255 8.16847L37.3183 7.5836L29.955 2.24802L29.1502 1.66482L28.5621 2.46609L23.0793 9.93639L22.9814 10.0697L22.9317 10.2274L22.1735 12.6322L21.3451 10.0594L21.2962 9.9073L21.2023 9.77806L15.7467 2.26909L15.1589 1.46007L14.3499 2.04786L6.98813 7.39647L6.17911 7.98425L6.7669 8.79327L12.2225 16.3022L12.3133 16.4273L12.4377 16.5191L14.4955 18.0378L11.8235 17.9723L11.6501 17.968L11.4853 18.0224L2.68639 20.9284L1.74261 21.2401L2.04855 22.1858L4.8476 30.8375L5.15729 31.7948L6.11265 31.4793L14.9116 28.5733Z"
 				stroke="#48D597"
 				stroke-width="2.5"
 			/>
 		</svg>
-    <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="wmpt-mobile">
-      <path d="M11.1847 22.8233L11.2899 22.7886L11.3805 22.7249L13.0745 21.5354L12.3749 23.6182L12.3363 23.7332L12.3359 23.8545L12.3119 30.9889L12.3093 31.7406L13.0609 31.7415L20.0973 31.75L20.8413 31.7509L20.8482 31.0069L20.9135 23.9293L20.9147 23.8041L20.8751 23.6853L20.2199 21.7189L22.0194 23.0322L22.1164 23.103L22.2306 23.1399L28.9252 25.3062L29.6388 25.5371L29.8697 24.8235L32.036 18.1289L32.2674 17.4138L31.5517 17.1839L24.7591 15.0021L24.6456 14.9657L24.5265 14.9662L22.5256 14.9748L24.28 13.7001L24.3775 13.6293L24.4479 13.5315L28.6374 7.71029L29.0741 7.10352L28.4688 6.66487L22.7869 2.54771L22.1833 2.11031L21.7422 2.71126L17.5114 8.47566L17.4381 8.57563L17.4008 8.69391L16.7953 10.6144L16.1353 8.56438L16.0985 8.45033L16.0281 8.3534L11.8184 2.55916L11.3775 1.9524L10.7708 2.39324L5.09013 6.52045L4.48337 6.96129L4.9242 7.56805L9.13396 13.3623L9.2021 13.4561L9.29536 13.5249L10.9385 14.7376L8.80803 14.6853L8.67797 14.6821L8.55443 14.7229L1.76479 16.9653L1.05696 17.1991L1.28642 17.9084L3.44627 24.5844L3.67855 25.3023L4.39506 25.0657L11.1847 22.8233Z" stroke="#48D597" stroke-width="1.5"/>
-      </svg>
+		<svg
+			width="34"
+			height="33"
+			viewBox="0 0 34 33"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			class="wmpt-mobile"
+		>
+			<path
+				d="M11.1847 22.8233L11.2899 22.7886L11.3805 22.7249L13.0745 21.5354L12.3749 23.6182L12.3363 23.7332L12.3359 23.8545L12.3119 30.9889L12.3093 31.7406L13.0609 31.7415L20.0973 31.75L20.8413 31.7509L20.8482 31.0069L20.9135 23.9293L20.9147 23.8041L20.8751 23.6853L20.2199 21.7189L22.0194 23.0322L22.1164 23.103L22.2306 23.1399L28.9252 25.3062L29.6388 25.5371L29.8697 24.8235L32.036 18.1289L32.2674 17.4138L31.5517 17.1839L24.7591 15.0021L24.6456 14.9657L24.5265 14.9662L22.5256 14.9748L24.28 13.7001L24.3775 13.6293L24.4479 13.5315L28.6374 7.71029L29.0741 7.10352L28.4688 6.66487L22.7869 2.54771L22.1833 2.11031L21.7422 2.71126L17.5114 8.47566L17.4381 8.57563L17.4008 8.69391L16.7953 10.6144L16.1353 8.56438L16.0985 8.45033L16.0281 8.3534L11.8184 2.55916L11.3775 1.9524L10.7708 2.39324L5.09013 6.52045L4.48337 6.96129L4.9242 7.56805L9.13396 13.3623L9.2021 13.4561L9.29536 13.5249L10.9385 14.7376L8.80803 14.6853L8.67797 14.6821L8.55443 14.7229L1.76479 16.9653L1.05696 17.1991L1.28642 17.9084L3.44627 24.5844L3.67855 25.3023L4.39506 25.0657L11.1847 22.8233Z"
+				stroke="#48D597"
+				stroke-width="1.5"
+			/>
+		</svg>
 		<h1 class="wmpt-desktop">. We make payment tech.</h1>
-    <h1 class="wmpt-mobile">.</h1>
+		<h1 class="wmpt-mobile">.</h1>
 	</div>
-  <h1 class="wmpt-mobile">We make payment tech.</h1>
+	<h1 class="wmpt-mobile">We make payment tech.</h1>
 	<h1>
 		From daily coffees ☕ to corporate treasuries 💼, we help people <grey
 			><strike-through>trust</strike-through></grey
@@ -25,9 +43,9 @@
 	<h1>
 		And we help the <green>7.97 billion</green> protect themselves against cancerous inflation.
 	</h1>
-  <h1>We'll be ready for you soon.</h1>
+
 	<social>
-		<a href="https://github.com/valeralabs">
+		<a href="https://github.com/valeralabs" class="wmpt-desktop">
 			<svg
 				width="32"
 				height="32"
@@ -49,7 +67,7 @@
 				</defs>
 			</svg>
 		</a>
-		<a href="https://twitter.com/valeralabs">
+		<a href="https://twitter.com/valeralabs" class="wmpt-desktop">
 			<svg
 				width="32"
 				height="28"
@@ -64,17 +82,64 @@
 				/>
 			</svg>
 		</a>
+		<a href="https://github.com/valeralabs" class="wmpt-mobile">
+			<svg
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clip-path="url(#clip0_1940_7042)">
+					<path
+						d="M12 0.500244C5.37 0.500244 0 5.78025 0 12.2922C0 17.5032 3.438 21.9222 8.205 23.4802C8.805 23.5912 9.02499 23.2263 9.02499 22.9133C9.02499 22.6332 9.015 21.8913 9.00999 20.9082C5.67201 21.6192 4.968 19.3263 4.968 19.3263C4.422 17.9652 3.633 17.6013 3.633 17.6013C2.54601 16.8702 3.717 16.8852 3.717 16.8852C4.92201 16.9672 5.55501 18.1002 5.55501 18.1002C6.62499 19.9032 8.364 19.3823 9.05001 19.0812C9.15801 18.3183 9.46701 17.7993 9.81 17.5043C7.14501 17.2092 4.344 16.1952 4.344 11.6772C4.344 10.3902 4.809 9.33825 5.57901 8.51325C5.44401 8.21524 5.03901 7.01625 5.68401 5.39225C5.68401 5.39225 6.68901 5.07624 8.98401 6.60124C9.94401 6.33924 10.964 6.20925 11.984 6.20325C13.004 6.20925 14.024 6.33924 14.984 6.60124C17.2641 5.07624 18.2691 5.39225 18.2691 5.39225C18.9141 7.01625 18.5091 8.21524 18.3891 8.51325C19.1541 9.33825 19.6191 10.3902 19.6191 11.6772C19.6191 16.2072 16.8141 17.2042 14.144 17.4942C14.564 17.8482 14.954 18.5712 14.954 19.6763C14.954 21.2543 14.939 22.5222 14.939 22.9053C14.939 23.2143 15.1491 23.5833 15.7641 23.4653C20.565 21.9173 24 17.4953 24 12.2922C24 5.78025 18.627 0.500244 12 0.500244Z"
+						fill="white"
+					/>
+				</g>
+				<defs>
+					<clipPath id="clip0_1940_7042">
+						<rect width="24" height="24" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+		</a>
+		<a href="https://twitter.com/valeralabs" class="wmpt-mobile">
+			<svg
+				width="24"
+				height="21"
+				viewBox="0 0 24 21"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clip-path="url(#clip0_1940_7040)">
+					<path
+						d="M24 3.0585C23.1075 3.45 22.1565 3.7095 21.165 3.8355C22.185 3.2265 22.9635 2.2695 23.3295 1.116C22.3785 1.683 21.3285 2.0835 20.2095 2.307C19.3065 1.3455 18.0195 0.75 16.6155 0.75C13.8914 0.75 11.6985 2.961 11.6985 5.6715C11.6985 6.0615 11.7315 6.4365 11.8125 6.7935C7.722 6.594 4.1025 4.6335 1.671 1.647C1.2465 2.3835 0.9975 3.2265 0.9975 4.134C0.9975 5.838 1.875 7.3485 3.183 8.223C2.3925 8.208 1.617 7.9785 0.96 7.617C0.96 7.632 0.96 7.6515 0.96 7.671C0.96 10.062 2.6655 12.048 4.902 12.5054C4.5015 12.615 4.065 12.6674 3.612 12.6674C3.297 12.6674 2.979 12.6494 2.6805 12.5834C3.318 14.532 5.127 15.9645 7.278 16.011C5.604 17.3205 3.4785 18.1095 1.1775 18.1095C0.774 18.1095 0.387 18.0915 0 18.042C2.1795 19.4475 4.7625 20.25 7.548 20.25C16.602 20.25 21.552 12.75 21.552 6.249C21.552 6.0315 21.5445 5.8215 21.534 5.613C22.5105 4.92 23.331 4.0545 24 3.0585Z"
+						fill="white"
+					/>
+				</g>
+				<defs>
+					<clipPath id="clip0_1940_7040">
+						<rect width="24" height="21" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+		</a>
 	</social>
 </main>
 
 <style>
-	@media screen and (min-width: 1024px) {
+
+  main {
+    margin: 24px 16px;
+  }
+	@media screen and (min-width: 1280px) {
 		main {
 			/* Auto layout */
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
 			padding: 0px;
+			margin: 16px;
 			gap: 16px;
 
 			width: 1024px;
@@ -85,74 +150,88 @@
 			flex-grow: 0;
 		}
 
-    h1 {
-      font-size: 48px;
-      letter-spacing: -0.02em;
-    }
+		h1 {
+			font-size: 48px;
+			letter-spacing: -0.02em;
+		}
 
-    .wmpt-mobile {
-      display: none;
-    }
+		.wmpt-mobile {
+			display: none;
+		}
+
+		strike-through {
+			text-decoration-line: line-through;
+			text-decoration-thickness: 3px;
+		}
+
+		social {
+			margin-top: 16px;
+		}
 	}
 
-  @media screen and (max-width: 1024px) {
-    main {
-      /* Auto layout */
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 24px;
-
-      /* Inside auto layout */
-      flex: none;
-      order: 0;
-      align-self: stretch;
-      flex-grow: 0;
-
-      max-width: 512px;
-    }
-
-    h1 {
-      font-size: 32px;
-      letter-spacing: -0.01em;
-    }
-
-    .wmpt-desktop {
-      display: none;
-    }
-  }
-
-  #hi {
+	@media screen and (max-width: 1280px) {
+		main {
 			/* Auto layout */
 			display: flex;
-			flex-direction: row;
-			align-items: center;
+			flex-direction: column;
+			align-items: flex-start;
 			padding: 0px;
-			gap: 10px;
+			gap: 24px;
 
 			/* Inside auto layout */
 			flex: none;
 			order: 0;
-			flex-grow: 0;
-			margin: 0px 0px;
-		}
-
-    h1 {
-			font-family: 'GT Planar';
-			font-style: normal;
-			font-weight: 300;
-			line-height: 125%;
-
-			color: #ffffff;
-
-			/* Inside auto layout */
-			flex: none;
-			order: 0;
+			align-self: stretch;
 			flex-grow: 0;
 
-			margin: 0px 0px;
+			max-width: 512px;
 		}
+
+		h1 {
+			font-size: 32px;
+			letter-spacing: -0.01em;
+		}
+
+		.wmpt-desktop {
+			display: none;
+		}
+
+		strike-through {
+			text-decoration-line: line-through;
+			text-decoration-thickness: 1.5px;
+		}
+	}
+
+	#hi {
+		/* Auto layout */
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0px;
+		gap: 10px;
+
+		/* Inside auto layout */
+		flex: none;
+		order: 0;
+		flex-grow: 0;
+		margin: 0px 0px;
+	}
+
+	h1 {
+		font-family: 'GT Planar';
+		font-style: normal;
+		font-weight: 300;
+		line-height: 125%;
+
+		color: #ffffff;
+
+		/* Inside auto layout */
+		flex: none;
+		order: 0;
+		flex-grow: 0;
+
+		margin: 0px 0px;
+	}
 
 	green {
 		color: #48d597;
@@ -162,18 +241,12 @@
 		color: #888888;
 	}
 
-	strike-through {
-		text-decoration-line: line-through;
-		text-decoration-thickness: 3px;
-	}
-
 	social {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		padding: 0px;
 		gap: 32px;
-		margin-top: 16px;
 	}
 
 	a {
@@ -184,7 +257,7 @@
 		transform: translateY(-2px);
 	}
 
-  a:active {
+	a:active {
 		transform: translateY(2px);
 	}
 </style>

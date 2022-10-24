@@ -17,20 +17,23 @@
 <style>
     html {
         display: flex;
-        padding: 0 16px;
         justify-content: center;
         align-items: center;
         background: #000000;
         height: 100%;
     }
     
-    @media screen and (min-width: 1024px) {
+    body {
+        margin: 0;
+    }
+    
+    @media screen and (min-width: 1280px) {
         html {
             flex-direction: row;
         }
     }
     
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1280px) {
         html {
             flex-direction: column;
         }
