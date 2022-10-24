@@ -59,7 +59,6 @@ declare module '$env/static/private' {
 	export const npm_config_engine_strict: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_global_prefix: string;
-	export const npm_config_host: string;
 	export const npm_config_init_module: string;
 	export const npm_config_local_prefix: string;
 	export const npm_config_metrics_registry: string;
@@ -174,7 +173,6 @@ declare module '$env/dynamic/private' {
 		npm_config_engine_strict: string;
 		npm_config_globalconfig: string;
 		npm_config_global_prefix: string;
-		npm_config_host: string;
 		npm_config_init_module: string;
 		npm_config_local_prefix: string;
 		npm_config_metrics_registry: string;
