@@ -125,10 +125,51 @@
 			</svg>
 		</a>
 	</social>
+	<button>Download for iOS</button>
 </main>
 
 <style>
+	button {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 16px 32px;
+		gap: 10px;
 
+		color: #48d597;
+
+		max-width: 361px;
+
+		background: #16362E;
+		border-radius: 12px;
+
+		flex: none;
+		order: 5;
+		align-self: stretch;
+		flex-grow: 0;
+
+		font-family: 'GT Planar';
+		font-style: italic;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 125%;
+		/* identical to box height, or 20px */
+
+		letter-spacing: 0.07em;
+		text-transform: uppercase;
+
+		transition: transform 200ms ease 0s, background 200ms ease 0s;
+	}
+	button:hover {
+		background: #1e4a3a;
+		transform: translateY(-2px);
+		cursor: pointer;
+	}
+	button:active {
+		background: #16362E;
+		transform: translateY(2px);
+	}
   main {
     margin: 24px 16px;
   }
