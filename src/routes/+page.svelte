@@ -237,6 +237,7 @@
 
 	green {
 		color: #48d597;
+		color: color(display-p3 .2824 .8353 .5922/1);
 	}
 
 	grey {
