@@ -37,9 +37,9 @@
 		From daily coffees ☕ to corporate treasuries 💼, we help people <grey
 			><strike-through>trust</strike-through></grey
 		>
-		verify their <i>own</i> money.
+		<green>verify</green> their money.
 	</h1>
-	<h1>We support the <green>1.7 billion</green> that banks 🏦 rejected.</h1>
+	<h1>We support the <green>1.7 billion</green> that banks rejected.</h1>
 	<h1>
 		And we help the <green>7.97 billion</green> protect themselves against cancerous inflation.
 	</h1>
@@ -256,8 +256,16 @@
 		transition: transform 200ms ease 0s, background 200ms ease 0s;
 	}
 
+	a svg path {
+		transition: fill 200ms ease 0s;
+	}
+
 	a:hover {
 		transform: translateY(-2px);
+	}
+	
+	a:hover svg path {
+		fill: #48d597;
 	}
 
 	a:active {
