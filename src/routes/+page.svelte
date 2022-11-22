@@ -19,7 +19,7 @@
 	</h1>
 	<h1>We support the <green>1.7 billion</green> that banks rejected.</h1>
 	<h1>
-		And we help the <green>7.97 billion</green> protect themselves against cancerous inflation.
+		And we help the <green>8 billion</green> protect themselves against cancerous inflation.
 	</h1>
 
 	<Social />
