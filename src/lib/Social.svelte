@@ -106,11 +106,11 @@
 	}
 
     a {
-		transition: transform 200ms ease 0s, background 200ms ease 0s;
+		transition-duration: 200ms;
 	}
 
-	a svg path {
-		transition: fill 200ms ease 0s;
+	a svg path, g {
+		transition-duration: 400ms;
 	}
 
 	a:hover {

@@ -35,8 +35,8 @@
 		padding: 0px;
 		/* Inside auto layout */
 		flex: none;
-			order: 0;
-			flex-grow: 0;
+		order: 0;
+		flex-grow: 0;
 	}
 	@media screen and (min-width: 1280px) {
 		main {
