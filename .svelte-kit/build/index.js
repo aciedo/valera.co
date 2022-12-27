@@ -1,10 +1,10 @@
 
 import root from '__GENERATED__/root.svelte';
-import { respond } from '../../node_modules/@sveltejs/kit/src/runtime/server/index.js';
-import { set_paths, assets, base } from '../../node_modules/@sveltejs/kit/src/runtime/paths.js';
-import { set_prerendering } from '../../node_modules/@sveltejs/kit/src/runtime/env.js';
-import { set_private_env } from '../../node_modules/@sveltejs/kit/src/runtime/env-private.js';
-import { set_public_env } from '../../node_modules/@sveltejs/kit/src/runtime/env-public.js';
+import { respond } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/server/index.js';
+import { set_paths, assets, base } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/paths.js';
+import { set_building, set_version } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/env.js';
+import { set_private_env } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/env-private.js';
+import { set_public_env } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/env-public.js';
 
 const app_template = ({ head, body, assets, nonce }) => "<!DOCTYPE html>\n<html lang=en>\n\n<head>\n    <title>Hi. We’re Valera. We make payment tech.</title>\n    <meta name=\"description\" content=\"From daily coffees ☕ to corporate treasuries 💼, we help people trust verify their money. An early-stage payment technology firm developing cutting edge hardware and software using Bitcoin, the internet's native currency. Est. 722,913.\">\n    <meta property=\"og:locale\" content=\"en_US\">\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:title\" content=\"Hi. We’re Valera. We make payment tech.\">\n    <meta property=\"og:description\" content=\"From daily coffees ☕ to corporate treasuries 💼, we help people trust verify their money. An early-stage payment technology firm developing cutting edge hardware and software using Bitcoin, the internet's native currency. Est. 722,913.\">\n    <meta property=\"og:url\" content=\"https://valera.co/\">\n    <meta property=\"og:site_name\" content=\"Valera\">\n    <meta property=\"og:image\" content=\"" + assets + "/og.png\">\n    <meta property=\"og:image:secure_url\" content=\"" + assets + "/og.png\">\n    <meta property=\"og:image:width\" content=\"1200\">\n    <meta property=\"og:image:height\" content=\"630\">\n    <meta name=\"twitter:card\" content=\"summary_large_image\">\n    <meta name=\"twitter:description\" content=\"From daily coffees ☕ to corporate treasuries 💼, we help people trust verify their money. An early-stage payment technology firm developing cutting edge hardware and software using Bitcoin, the internet's native currency. Est. 722,913.\">\n    <meta name=\"twitter:title\" content=\"Hi. We’re Valera. We make payment tech.\">\n    <meta name=\"twitter:image\" content=\"" + assets + "/og.png\">\n    <meta name=\"twitter:site\" content=\"@valeralabs\">\n    <meta name=\"twitter:creator\" content=\"@valeralabs\">\n    <meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\">\n    <meta charset=utf-8 />\n    <link rel=icon href=" + assets + "/favicon.png />\n    <link rel=stylesheet href=" + assets + "/font.css />\n    <meta name=viewport content=width=device-width /> " + head + "\n</head>\n\n<body>\n    <div>" + body + "</div>\n</body>\n\n</html>\n\n<style>\n    html {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        background: #000000;\n        height: 100%;\n    }\n    \n    body {\n        margin: 0;\n    }\n    \n    @media screen and (min-width: 1280px) {\n        html {\n            flex-direction: row;\n        }\n    }\n    \n    @media screen and (max-width: 1280px) {\n        html {\n            flex-direction: column;\n        }\n    }\n</style>";
 
@@ -13,6 +13,7 @@ const error_template = ({ status, message }) => "<!DOCTYPE html>\n<html lang=\"e
 let read = null;
 
 set_paths({"base":"","assets":""});
+set_version("1672142783005");
 
 let default_protocol = 'https';
 
@@ -21,7 +22,7 @@ let default_protocol = 'https';
 export function override(settings) {
 	default_protocol = settings.protocol || default_protocol;
 	set_paths(settings.paths);
-	set_prerendering(settings.prerendering);
+	set_building(settings.building);
 	read = settings.read;
 }
 
@@ -33,17 +34,11 @@ export class Server {
 				check_origin: true,
 			},
 			dev: false,
+			embedded: false,
 			handle_error: (error, event) => {
-				return this.options.hooks.handleError({
-					error,
-					event,
-
-					// TODO remove for 1.0
-					// @ts-expect-error
-					get request() {
-						throw new Error('request in handleError has been replaced with event. See https://github.com/sveltejs/kit/pull/3384 for details');
-					}
-				}) ?? { message: event.routeId != null ? 'Internal Error' : 'Not Found' };
+				return this.options.hooks.handleError({ error, event }) ?? {
+					message: event.route.id != null ? 'Internal Error' : 'Not Found'
+				};
 			},
 			hooks: null,
 			manifest,
@@ -55,7 +50,7 @@ export class Server {
 			app_template,
 			app_template_contains_nonce: false,
 			error_template,
-			trailing_slash: "never"
+			version: "1672142783005"
 		};
 	}
 
@@ -78,11 +73,6 @@ export class Server {
 
 		if (!this.options.hooks) {
 			const module = await import("./hooks.js");
-
-			// TODO remove this for 1.0
-			if (module.externalFetch) {
-				throw new Error('externalFetch has been removed — use handleFetch instead. See https://github.com/sveltejs/kit/pull/6565 for details');
-			}
 
 			this.options.hooks = {
 				handle: module.handle || (({ event, resolve }) => resolve(event)),

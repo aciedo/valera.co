@@ -30,12 +30,12 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main class="${"svelte-18bbbqy"}"><div id="${"hi"}" class="${"svelte-18bbbqy"}"><h1 class="${"svelte-18bbbqy"}">Hi. We\u2019re <green class="${"svelte-18bbbqy"}">Valera</green></h1>
+  return `<main class="${"svelte-18bbbqy"}"><div id="${"hi"}" class="${"svelte-18bbbqy"}"><h1 class="${"svelte-18bbbqy"}">Hi. We’re <green class="${"svelte-18bbbqy"}">Valera</green></h1>
 		${validate_component(Icon, "Icon").$$render($$result, {}, {}, {})}
 		<h1 class="${"wmpt-desktop svelte-18bbbqy"}">. We make payment tech.</h1>
 		<h1 class="${"wmpt-mobile svelte-18bbbqy"}">.</h1></div>
 	<h1 class="${"wmpt-mobile svelte-18bbbqy"}">We make payment tech.</h1>
-	<h1 class="${"svelte-18bbbqy"}">From daily coffees \u2615 to corporate treasuries \u{1F4BC}, we help people <grey class="${"svelte-18bbbqy"}"><strike-through class="${"svelte-18bbbqy"}">trust</strike-through></grey>
+	<h1 class="${"svelte-18bbbqy"}">From daily coffees ☕ to corporate treasuries 💼, we help people <grey class="${"svelte-18bbbqy"}"><strike-through class="${"svelte-18bbbqy"}">trust</strike-through></grey>
 		<green class="${"svelte-18bbbqy"}">verify</green> their money.
 	</h1>
 	<h1 class="${"svelte-18bbbqy"}">We support the <green class="${"svelte-18bbbqy"}">1.7 billion</green> that banks rejected.</h1>

@@ -5,7 +5,7 @@
 /// <reference types="@sveltejs/kit" />
 
 /**
- * Environment variables [loaded by Vite](https://vitejs.dev/guide/env-and-mode.html#env-files) from `.env` files and `process.env`. Like [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), this module cannot be imported into public-facing code. This module only includes variables that _do not_ begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env).
+ * Environment variables [loaded by Vite](https://vitejs.dev/guide/env-and-mode.html#env-files) from `.env` files and `process.env`. Like [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), this module cannot be imported into client-side code. This module only includes variables that _do not_ begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env).
  * 
  * _Unlike_ [`$env/dynamic/private`](https://kit.svelte.dev/docs/modules#$env-dynamic-private), the values exported from this module are statically injected into your bundle at build time, enabling optimisations like dead code elimination.
  * 
@@ -31,52 +31,81 @@ declare module '$env/static/private' {
 	export const MANPATH: string;
 	export const STARSHIP_SHELL: string;
 	export const _VOLTA_TOOL_RECURSION: string;
+	export const npm_package_devDependencies_prettier: string;
 	export const TERM_PROGRAM: string;
-	export const PROJECT_CWD: string;
+	export const NODE: string;
+	export const npm_package_devDependencies_prettier_plugin_svelte: string;
+	export const npm_package_devDependencies_typescript: string;
 	export const INIT_CWD: string;
 	export const SHELL: string;
 	export const TERM: string;
+	export const npm_package_devDependencies_vite: string;
 	export const FIGTERM_SESSION_ID: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
+	export const npm_package_scripts_lint: string;
 	export const TERM_PROGRAM_VERSION: string;
+	export const npm_package_devDependencies_eslint_plugin_svelte3: string;
+	export const npm_package_scripts_dev: string;
 	export const MallocNanoZone: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const VOLTA_HOME: string;
 	export const ZDOTDIR: string;
+	export const npm_package_private: string;
+	export const npm_package_devDependencies__sveltejs_kit: string;
+	export const npm_package_devDependencies_svelte_preprocess: string;
+	export const npm_config_registry: string;
 	export const FIG_SET_PARENT_CHECK: string;
 	export const PNPM_HOME: string;
 	export const USER: string;
+	export const npm_package_scripts_check_watch: string;
 	export const COMMAND_MODE: string;
+	export const PNPM_SCRIPT_SRC_DIR: string;
 	export const SSH_AUTH_SOCK: string;
 	export const __CF_USER_TEXT_ENCODING: string;
+	export const npm_package_devDependencies_eslint: string;
+	export const npm_package_devDependencies__typescript_eslint_eslint_plugin: string;
+	export const npm_package_devDependencies_tslib: string;
 	export const npm_execpath: string;
+	export const npm_package_devDependencies_svelte: string;
+	export const npm_package_devDependencies__typescript_eslint_parser: string;
 	export const PATH: string;
 	export const FIG_HOSTNAME: string;
+	export const npm_config_engine_strict: string;
 	export const CLARINET_DISABLE_HINTS: string;
 	export const USER_ZDOTDIR: string;
 	export const __CFBundleIdentifier: string;
 	export const PWD: string;
 	export const TTY: string;
+	export const npm_package_scripts_preview: string;
 	export const npm_lifecycle_event: string;
-	export const npm_package_name: string;
 	export const LANG: string;
+	export const npm_package_name: string;
+	export const NODE_PATH: string;
+	export const npm_package_scripts_build: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XPC_FLAGS: string;
-	export const YARN_IGNORE_CWD: string;
-	export const npm_package_version: string;
+	export const npm_package_devDependencies_eslint_config_prettier: string;
+	export const npm_config_node_gyp: string;
 	export const XPC_SERVICE_NAME: string;
+	export const npm_package_version: string;
+	export const npm_package_devDependencies__sveltejs_adapter_auto: string;
 	export const VSCODE_INJECTION: string;
+	export const npm_package_devDependencies_svelte_check: string;
 	export const HOME: string;
 	export const SHLVL: string;
+	export const npm_package_type: string;
 	export const HEADSCALE_CLI_ADDRESS: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
+	export const npm_package_scripts_test: string;
 	export const HOMEBREW_PREFIX: string;
 	export const STACKS_LOG_DEBUG: string;
 	export const FIG_SET_PARENT: string;
 	export const LOGNAME: string;
 	export const STARSHIP_SESSION_KEY: string;
-	export const BERRY_BIN_FOLDER: string;
+	export const npm_package_scripts_format: string;
+	export const npm_package_devDependencies__sveltejs_adapter_cloudflare: string;
+	export const npm_lifecycle_script: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
 	export const HEADSCALE_CLI_API_KEY: string;
 	export const BUN_INSTALL: string;
@@ -85,9 +114,12 @@ declare module '$env/static/private' {
 	export const HOMEBREW_CELLAR: string;
 	export const INFOPATH: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
-	export const npm_node_execpath: string;
+	export const npm_package_devDependencies__playwright_test: string;
+	export const npm_package_scripts_check: string;
 	export const COLORTERM: string;
 	export const FIG_TERM: string;
+	export const npm_node_execpath: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -106,7 +138,7 @@ declare module '$env/static/public' {
 /**
  * This module provides access to runtime environment variables, as defined by the platform you're running on. For example if you're using [`adapter-node`](https://github.com/sveltejs/kit/tree/master/packages/adapter-node) (or running [`vite preview`](https://kit.svelte.dev/docs/cli)), this is equivalent to `process.env`. This module only includes variables that _do not_ begin with [`config.kit.env.publicPrefix`](https://kit.svelte.dev/docs/configuration#env).
  * 
- * This module cannot be imported into public-facing code.
+ * This module cannot be imported into client-side code.
  * 
  * ```ts
  * import { env } from '$env/dynamic/private';
@@ -122,52 +154,81 @@ declare module '$env/dynamic/private' {
 		MANPATH: string;
 		STARSHIP_SHELL: string;
 		_VOLTA_TOOL_RECURSION: string;
+		npm_package_devDependencies_prettier: string;
 		TERM_PROGRAM: string;
-		PROJECT_CWD: string;
+		NODE: string;
+		npm_package_devDependencies_prettier_plugin_svelte: string;
+		npm_package_devDependencies_typescript: string;
 		INIT_CWD: string;
 		SHELL: string;
 		TERM: string;
+		npm_package_devDependencies_vite: string;
 		FIGTERM_SESSION_ID: string;
 		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;
+		npm_package_scripts_lint: string;
 		TERM_PROGRAM_VERSION: string;
+		npm_package_devDependencies_eslint_plugin_svelte3: string;
+		npm_package_scripts_dev: string;
 		MallocNanoZone: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		VOLTA_HOME: string;
 		ZDOTDIR: string;
+		npm_package_private: string;
+		npm_package_devDependencies__sveltejs_kit: string;
+		npm_package_devDependencies_svelte_preprocess: string;
+		npm_config_registry: string;
 		FIG_SET_PARENT_CHECK: string;
 		PNPM_HOME: string;
 		USER: string;
+		npm_package_scripts_check_watch: string;
 		COMMAND_MODE: string;
+		PNPM_SCRIPT_SRC_DIR: string;
 		SSH_AUTH_SOCK: string;
 		__CF_USER_TEXT_ENCODING: string;
+		npm_package_devDependencies_eslint: string;
+		npm_package_devDependencies__typescript_eslint_eslint_plugin: string;
+		npm_package_devDependencies_tslib: string;
 		npm_execpath: string;
+		npm_package_devDependencies_svelte: string;
+		npm_package_devDependencies__typescript_eslint_parser: string;
 		PATH: string;
 		FIG_HOSTNAME: string;
+		npm_config_engine_strict: string;
 		CLARINET_DISABLE_HINTS: string;
 		USER_ZDOTDIR: string;
 		__CFBundleIdentifier: string;
 		PWD: string;
 		TTY: string;
+		npm_package_scripts_preview: string;
 		npm_lifecycle_event: string;
-		npm_package_name: string;
 		LANG: string;
+		npm_package_name: string;
+		NODE_PATH: string;
+		npm_package_scripts_build: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XPC_FLAGS: string;
-		YARN_IGNORE_CWD: string;
-		npm_package_version: string;
+		npm_package_devDependencies_eslint_config_prettier: string;
+		npm_config_node_gyp: string;
 		XPC_SERVICE_NAME: string;
+		npm_package_version: string;
+		npm_package_devDependencies__sveltejs_adapter_auto: string;
 		VSCODE_INJECTION: string;
+		npm_package_devDependencies_svelte_check: string;
 		HOME: string;
 		SHLVL: string;
+		npm_package_type: string;
 		HEADSCALE_CLI_ADDRESS: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
+		npm_package_scripts_test: string;
 		HOMEBREW_PREFIX: string;
 		STACKS_LOG_DEBUG: string;
 		FIG_SET_PARENT: string;
 		LOGNAME: string;
 		STARSHIP_SESSION_KEY: string;
-		BERRY_BIN_FOLDER: string;
+		npm_package_scripts_format: string;
+		npm_package_devDependencies__sveltejs_adapter_cloudflare: string;
+		npm_lifecycle_script: string;
 		VSCODE_GIT_IPC_HANDLE: string;
 		HEADSCALE_CLI_API_KEY: string;
 		BUN_INSTALL: string;
@@ -176,9 +237,13 @@ declare module '$env/dynamic/private' {
 		HOMEBREW_CELLAR: string;
 		INFOPATH: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
-		npm_node_execpath: string;
+		npm_package_devDependencies__playwright_test: string;
+		npm_package_scripts_check: string;
 		COLORTERM: string;
 		FIG_TERM: string;
+		npm_node_execpath: string;
+		NODE_ENV: string;
+		[key: `PUBLIC_${string}`]: undefined;
 		[key: string]: string | undefined;
 	}
 }
@@ -195,6 +260,6 @@ declare module '$env/dynamic/private' {
  */
 declare module '$env/dynamic/public' {
 	export const env: {
-		[key: string]: string | undefined;
+		[key: `PUBLIC_${string}`]: string | undefined;
 	}
 }
