@@ -2,13 +2,22 @@ import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from '../$types';
  
 export const load = (async ({ platform }) => {
-  const API: Fetcher = platform.env.API;
+  let api;
 
-  const post = await API.fetch("https://api.valera.co/test")
- 
+  if (platform) {
+    api = platform.env.API.fetch
+  } else {
+    api = fetch
+  }
+
+  const start = Date.now();
+  const post = await api("https://api.valera.co/test")
+  const lat = Date.now() - start;
+
   return {
     status: post.status,
-    text: await post.text()
+    text: await post.text(),
+    lat
   };
  
 }) satisfies PageServerLoad;

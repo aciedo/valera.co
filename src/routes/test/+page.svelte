@@ -4,5 +4,5 @@
     export let data: PageData;
 </script>
 
-<h1>{data.status}</h1>
+<h1>{data.status} in {data.lat}ms</h1>
 <body>{data.text}</body>
