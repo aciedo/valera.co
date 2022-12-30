@@ -1,0 +1,1 @@
+import{S as i,i as o,s as l}from"../../../chunks/index-81c55bf9.js";function r(a,t,s){let{data:e}=t;return a.$$set=n=>{"data"in n&&s(0,e=n.data)},[e]}class d extends i{constructor(t){super(),o(this,t,r,null,l,{data:0})}}export{d as default};
